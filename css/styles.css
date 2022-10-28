@@ -46,7 +46,8 @@ body {
 .logo:hover,
 .logo:focus {
 
-    text-decoration-color: var(--blue)
+    text-decoration-color: var(--blue);
+    transition-duration: 250ms;
 }
 
 .blue {
@@ -92,6 +93,7 @@ body {
 .link-kontakt:focus {
     color: var(--blue);
     text-decoration-color: var(--blue);
+    transition-duration: 250ms;
 }
 
 
@@ -101,6 +103,7 @@ body {
 .link-phone:focus {
     color: var(--blue);
     stroke: var(--blue);
+    transition-duration: 250ms;
 }
 
 .link-mail-header {
@@ -129,14 +132,14 @@ text-decoration-line: none;
 
 .link-mail-header:hover,
 .link-mail-header:focus {--color4: var(--color1);
-    color: var(--blue)
+    color: var(--blue);transition-duration: 250ms;
    
 }
 
 .link-phone-header:hover,
 .link-phone-header:focus {
         --color4: var(--color1);
-        color: var(--blue)
+        color: var(--blue);transition-duration: 250ms;
 }
 
 .header-portfolio {
@@ -228,6 +231,7 @@ text-decoration-line: none;
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);  
+    transition-duration: 250ms;
 }
 
 
@@ -394,9 +398,12 @@ ul {
 
 }
 
-.project-description:hover, 
-.project-description:focus{box-shadow: 1px 4px 6px 0px rgba(0,0,0,0.16);
-cursor: pointer;
+.project-description:hover,
+.project-description:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition-duration: 250ms;
+    
 }
 
 
@@ -544,15 +551,18 @@ margin-bottom: 30px;}
     background-repeat: no-repeat;
     background-color: var(--main-bacground-color);
     /* fill: var(--icons-color);} */
-    fill:var(--blue)
+    fill:var(--blue);
+    
 }
 
 .socialmedia-icon:hover, .socialmedia-icon:focus{--color2:var(--white);
     background-color: var(--main-link-color);
-    fill: var(--main-link-color); transition: 0.2s;}
+    fill: var(--main-link-color); transition-duration: 250ms;
+            
+        ;}
 
-
-.socialfooter-svg-icon:hover{}
+/* 
+.socialfooter-svg-icon:hover{transition: 250ms, cubic-bezier(0.4,0,0.2,1);} */
 
 .footer-menu {
     display: flex;
@@ -623,7 +633,8 @@ margin-bottom: 30px;}
     background-color: var(--main-link-color);
     background-image: linear-gradient(var(--main-link-color));
     /* fill: white; */
-    transition: 0.3s;
+    transition-duration: 250ms;
+   
     cursor: pointer;
 }
 .socialfooter-icon:focus svg {
@@ -635,7 +646,7 @@ margin-bottom: 30px;}
     background-repeat: no-repeat;
     background-color: var(--main-link-color);
     fill: white;
-    transition: 0.3s;
+    transition-duration: 250ms;
     cursor: pointer;
 }
 
@@ -676,6 +687,7 @@ gap: 30px;
     background-color: var(--main-bacground-color);
     fill: var(--main-link-color);
     cursor: pointer;
+    transition-duration: 250ms;
 }
 
 
