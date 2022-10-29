@@ -26,6 +26,8 @@ body {
     color: var(--black);
 }
 
+.header{width: 1600px;}
+.header-portfolio{width: 1600px;}
 .logo {
     font-family: 'Raleway';
     font-size: 26px;
@@ -67,17 +69,33 @@ transition-duration: 250ms;
 }
 
 .link-agencja {
+    position: relative;
     color: var(--black);
     text-decoration-line: none;
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
 }
 
 .link-portfolio {
     color: var(--black);
     text-decoration-line: none;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500;line-height: 1.14em;
+    letter-spacing: 0.02em;
+}
+
+/* made during practice*/
+.link-agencja::after{
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left:0;
+    width: 100%;
+    height: 4px;
+    background-color:var(--blue);
+
 }
 
 .link-kontakt {
@@ -220,12 +238,12 @@ text-decoration-line: none;
 }
 
 .main-button {
-
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
     background-color: var(--blue);
     color: var(--white);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.88;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -316,6 +334,7 @@ ul {
 
 .main-tittle {
     display: flex;
+  
     flex-direction: column;
     width: 696px;
     text-align: center;
@@ -340,6 +359,8 @@ ul {
     /* width: 100%; */
     max-width: 1200px;
     margin: 0 auto;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     
 }
 
@@ -415,6 +436,7 @@ ul {
     cursor: pointer;
     transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
     }
 
 
@@ -454,8 +476,12 @@ ul {
 
 .photos-list {
     display: flex;
-    text-align: center;
-    line-height: 75px;
+    justify-content: space-between;
+    /* text-align: center; */
+    /* line-height: 75px; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     gap: 30px;
 }
 
@@ -506,9 +532,9 @@ ul {
 }
 
 .screen {
-    max-width: 100%;
+    /* max-width: 100%;
     width: 100%;
-    height: auto;
+    height: auto; */
 }
 
 
@@ -722,3 +748,123 @@ gap: 30px;
             #ffd180 10px,
             #ffd180 20px);
 }*/
+
+
+/* creating a modal window*/
+.main-link{position: relative;}
+
+
+.main-link:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -5%;
+    width: 110%;
+    height: 4px;}
+
+.main-link:hover:after {
+    width: 110%;
+}
+
+.backdrop {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0.5);
+    transition: transform 0.25s;
+}
+  
+
+.modal {
+    width: 528px;
+    min-height: 581px;
+    background-color: white;
+    margin: auto;
+    padding: 50px 20px 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    } 
+   
+ .modal-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.is-hidden {
+    transition-duration: 1000ms;
+    transform: translateY(100%) rotate(720deg);
+}
+
+
+
+
+
+
+/* .screen-portfolio{position: relative;} */
+
+.project-photo-text{
+
+    display: inline-block;
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    top:0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--main-background-color);
+    background-color: rgba(33,150,243,0.9);
+    transform: translateY(100%);
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.project-hover {
+    display: block;
+    text-decoration: none;
+    color: var(--section-background-color);
+}
+.project-item-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-item{position: relative;}
+
+
+
+.range-work {
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    justify-content: center;
+    padding: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: rgba(47, 48, 58, 0.8);
+    border: 20px solid red;
+}
+
+
+

@@ -50,9 +50,15 @@
 
         <!--first section header and button-->
         <section class="tittle">
-            <h1 class="main-tittle container">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            
+        <h1 class="main-tittle container">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+<div>           
+    <a class="main-link" href="#" data-modal-open><button type="button" class="main-button order">Zamów usługę</button></a>
+    
+   
 
-            <button type="button" class="main-button order">Zamów usługę</button>
+    </div>
+
         </section>
 
         <!--end of 1st section-->
@@ -127,12 +133,15 @@
             <div class="container">
                 <h2 class="h2-title">Czym się zajmujemy</h2>
                 <ul class="photos-list">
-                <li>
+                <li class="work-item">
                         <a href="#">
                             <img class="screen"
                                 src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg" width="370"
-                                height="294" alt="programer working his desk office" /></a>
+                                height="294" alt="programer working his desk office" />
+                                <p class="range-work">Aplikacje komputerowe</p></a>
                     </li>
+
+                    
                     <li><a href="#">
                             <img class="screen"
                                 src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
@@ -464,8 +473,32 @@
            
         </div>
     </footer>
-    
+<!-- 
+<a class="main-link" href="#" data-modal-open>
+    <div class="backdrop is-hidden" data modal>
+        <button type="button" class="modal">
+            <button><span>x</span></button>
+        </div> -->
+
+        
+    </div>
+<!-- <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-close-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-close-cross-svgrepo-com"></use>
+            </svg>
+        </button>
+    </div>
+    </div> -->
     <!-- added code line from homwe work5-->
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-btn" data-modal-close>
+            <span>x</span></button>
+    </div>
+   
     <script src="./js/modal.js"></script>
     
     <!--end script-->
